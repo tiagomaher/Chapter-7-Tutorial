@@ -59,7 +59,7 @@
             <legend> Customer Information</legend>
             <div class="formRow">
             <label for="name">Name*</label>
-            <input name="custName" id="name" type="text">
+            <input name="custName" id="name" type="text" placeholder="first and last name">
             </div>
 
             <div class="formRow">
@@ -69,23 +69,23 @@
 
             <div class="formRow">
             <label for="city">City</label>
-            <input name="custCity" id="city" type="text">
+            <input name="custCity" id="city" type="text" value="Ormond Beach"/>
          </div>
 
             <div class="formRow">
             <label for="state">State</label>
-            <input name="custState" id="state" type="text">
+            <input name="custState" id="state" type="text" value="FL"/>
          </div>
 
             <div class="formRow">
             <label for="zip">Postal Code</label>
-            <input name="custZip" id="zip" type="text">
+            <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" />
          </div>
 
 
-            <div class="formRow"></div>
+            <div class="formRow">
             <label for="phone">Phone Number</label>
-            <input name="custPhone" id="phone" type="tel">
+            <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" />
          </div>
             <div class="formRow">
             <label for="mail">E-mail*</label>
@@ -95,6 +95,21 @@
          </fieldset>
          <fieldset id="expInfo">
             <legend> Share Your Experiences at Red Ball Pizza</legend>
+
+            <div class="formRow">
+               <label for="visit"> Date of visit</label>
+               <input name="visitDate" id="visit" type="date">
+            </div>
+            <div class="formRow">
+               <label for="order"> Order type</label>
+               <select name="orderType" id="order">
+               <option value="order1"> Carry out</option>
+               <option value="order2"> Delivery</option>
+               <option value="order3" selected> Dine in</option>
+               <option value="order4"> Take 'n bake</option>
+
+               </select>
+            </div>
          </fieldset>
       </form>
 
